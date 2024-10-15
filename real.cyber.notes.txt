@@ -1,0 +1,275 @@
+Table of Contents
+1. Navigating Linux
+2. Nano
+3. Networking Terms
+4. More networking terms
+
+
+# List directories and items
+ls
+
+# Change directory
+cd /path/to/directory
+
+# Print current directory path
+pwd
+
+# Create a new directory
+mkdir new_directory
+
+# Remove a directory
+rmdir existing_directory
+
+# Create a new file
+touch new_file.txt
+
+# Delete a file
+rm existing_file.txt
+
+# Move/Rename a file or folder
+mv old_file.txt new_location/
+
+# Shut down the system
+sudo shutdown now
+
+# Retrieve the date
+date
+
+# Show system uptime
+uptime
+
+# Display the current directory
+pwd
+
+# Activate Python interpreter
+python3
+
+Nano
+nano: Edits a file in Linux.
+
+
+Networking Terms
+IP Address (IPv4): Identifies devices on a network.
+Subnet Masks: Defines network and device parts of an IP address.
+Gateway: Connects different networks.
+DNS (Domain Name System): Converts domains to IP addresses.
+Network Switch: Connects devices in a network.
+Network Router: Connects networks.
+Access Points: Enable wireless internet connection.
+MAC Address: Unique device identifier.
+Ports: Lead to different apps/services.
+Types of Networks (WAN, LAN, PAN, MAN, VPN):
+WAN: Connects LANs from different locations.
+LAN: Connects computers and printers in a building.
+PAN: Connects personal devices in a room.
+MAN: Connects LANs in a campus or city.
+VPN: Securely connects devices from anywhere.
+
+
+ More Networking Terms
+ipconfig: Displays network information about your computer, like IP and MAC addresses.
+ip: Command for displaying routing, network devices, and interfaces.
+traceroute: Shows every step your computer takes to connect to the internet and the errors it's making.
+tracepath: Similar to traceroute but more complicated.
+ping: Confirms that your computer can connect to another computer on a server or the internet and how fast it can establish a connection.
+netstat: Shows information about the network connections on your computer, including which programs are using the network.
+ss: Similar to netstat but newer, providing better information about connections.
+dig: Used to look up information about internet domain names, helping find details like IP addresses.
+nslookup: Similar to dig but more basic, providing information in a more understandable format.
+route: Shows the path that information/data takes to get to and from computers on a network.
+host: Similar to nslookup.
+arp: Tells devices their MAC and IP addresses when they want to talk to each other.
+iwconfig: Checks your Wi-Fi connection and can change Wi-Fi settings.
+hostname: Displays the network name of the computer. Typing 'hostname' then another word will set a new hostname.
+curl or wget: Can download any URL (usually a file) off the internet.
+mtr: A combination of ping and traceroute.
+whois: Provides information about a domain, including ownership, contact information, registration, and expiration dates.
+ifplugstatus: Indicates whether it's connected to a network or not.
+iftop: Shows which programs are using a network and how much data they're sending and receiving.
+tcpdump: Captures and analyzes network traffic.
+Layers of an Operating System
+H
+
+1. Operating System (OS): The OS is like a traffic cop for your computer. It makes sure different programs and hardware work together smoothly.
+2. File Systems: Think of it as a way your computer organizes and stores files, like how you organize papers in folders.
+3. Shell: This is like a translator between you and your computer. It takes your commands and talks to the computer's brain (kernel) to get things done.
+4. Kernel: The kernel is the brain of your computer. It manages resources like memory and tells different parts of your computer how to work together.
+5. BIOS (Basic Input/Output System): This is like a starter for your computer. It kicks in when you turn it on, making sure everything is set up before the OS takes over.
+6. Firmware: Firmware is like a small set of instructions embedded in your devices. It tells them how to do their specific jobs.
+7. Hardware: These are the physical parts of your computer - things you can touch like the screen, keyboard, and the computer's brain (CPU
+Processor (CPU), Memory (RAM), Storage, Graphics Card (GPU), CPU Cooler, Motherboard, Power Supply, Case.
+Memory Types
+Volatile Memory is short term and loses data after power goes out
+RAM, Cache Memory, Registers.
+Non-Volatile Memory is long term and retains data without power
+SSD, HHD, Hard drive.
+How Data Transfers in a Network
+Describes the use of a router to facilitate communication between computers using Linux wall and write commands.
+
+How does the internet work 
+Your computer or phone connects to the internet using Wi-Fi or cables provided by your internet service. Instead of remembering numerical addresses, you use web addresses like www.example.com. When you open a website or use an app, your device communicates with big computers called servers. These servers store and provide the information you're looking for like images text etc...
+To ensure smooth communication between devices worldwide, everyone follows standardized rules, much like speaking the same language. Information doesn't travel in one big chunk but in small pieces called data packets. These packets move back and forth between your device and servers, and devices like routers and switches help direct them efficiently.
+For added security, some websites have a lock symbol (HTTPS) that encrypts the information, ensuring it stays safe during the journey. So, the internet is essentially a vast network where your device talks to servers, follows rules, shares information in tiny pieces, and occasionally uses safety measures for secure communication
+ 
+
+
+UDP TCP and How they compare
+
+1. **UDP (User Datagram Protocol):**
+   - **Quick and Simple:**
+     - No setup, faster, but less reliable.
+     - Used for real-time applications like streaming (e.g., video streaming, online gaming) and quick data exchanges (e.g., DNS queries).
+
+2. **TCP (Transmission Control Protocol):**
+   - **Reliable but Slower:**
+     - Requires setup, more reliable.
+     - Used for tasks where accurate data delivery is crucial, like file transfers (e.g., FTP) and web browsing (e.g., HTTP).
+     - Also used in email communication (e.g., SMTP for sending emails) where ensuring all parts of a message arrive intact is essential.
+
+- **UDP: ** If you're sending quick, real-time updates (e.g., instant messaging) where a small loss of data (like a missed message) is acceptable.
+  
+- **TCP: ** If you're sending critical information (like an email) where you want to ensure the entire message arrives correctly and in order. TCP also waits for an acknowledgment from the 
+What is the difference between Blackhat and white hat hacker?
+ white hat hackers apply societies ethics while hacking whilst black hat hackers don't obey societies ethics while hacking. 
+What is a CLI and GUI
+A CLI (Command Line Interface) is a platform where users can use commands that work in the terminal and allow them to interact with the OS.
+ Things like Powershell and terminal
+A GUI (Graphical User Interface) The GUI lets users use graphics to interact with the OS unlike a CLI which uses Commands.
+Operating systems such as Apple macOS, Microsoft Windows, GNOME, and KDE
+
+
+Summary of Git Commands Used 
+• Initialize Repository: bash - [git init] 
+• Configure Git: bash - [git config --global user.name "Your Name"] bash - [git config --global user.email "youremail@example.com"]
+ • Check Status: bash - [git status] 
+• Stage Files: bash - [git add filename] bash - [git add .] 
+• Commit Changes: bash - [git commit -m "message"] 
+• View Log: bash - [git log] 
+• Create and Switch Branch: bash - [git checkout -b branch-name]
+ • Switch Branch: bash - [git checkout branch-name]
+ • Merge Branches: bash - [git merge branch-name]
+ • Delete Branch: bash - [git branch -d branch-name] 
+• Undo Changes in Working Directory: o Using git restore (newer versions): bash - [git restore filename] o Using git checkout (older versions): bash - [git checkout -- filename] 
+• Remove Cached File: bash - [git rm --cached filename] 
+• Set Alias: bash - [git config --global alias.alias-name command] 
+• Tag a Commit: bash - [git tag -a v1.0 -m "message"]
+ • Reset Commits: bash - [git reset --soft HEAD~1] bash - [git reset --hard HEAD~1
+
+New Notes
+
+
+### Part 1: Bash Scripting
+
+#### 1. Definition
+A Bash script is a text file containing commands for the Bash shell, used to automate tasks in Linux.
+
+#### 2. Basic Syntax
+- **Example of variables:**
+  ```bash
+  #!/bin/bash
+  VAR="Hello, World!"
+  echo $VAR
+  ```
+- **If-Else Example:**
+  ```bash
+  if [ -d "$DIR" ]; then
+      echo "Directory exists."
+  else
+      echo "Directory does not exist."
+  fi
+  ```
+- **For Loop Example:**
+  ```bash
+  for i in {1..5}; do
+      echo "Iteration $i"
+  done
+  ```
+
+#### 3. Commands
+- `echo`: Prints text.
+- `read`: Gets user input.
+- `touch`: Creates a file.
+
+#### 4. Self-Made Instructions
+**Test Script:**
+```bash
+#!/bin/bash
+DIR="my_directory"
+if [ ! -d "$DIR" ]; then
+    mkdir "$DIR"
+    echo "Directory created."
+else
+    echo "Directory exists."
+fi
+```
+
+---
+
+### Part 2: System Monitoring
+
+#### 1. Definition
+System monitoring involves observing system performance to maintain health.
+
+#### 2. Key Tools
+- **top**: Displays processes and resource usage.
+- **htop**: Interactive process viewer.
+- **df**: Shows disk space usage.
+- **uptime**: Displays system uptime.
+
+#### 3. Log Monitoring
+- **journalctl**: Views logs.
+  ```bash
+  journalctl -xe
+  ```
+
+#### 4. Self-Made Instructions
+1. Run `htop` to monitor resource usage.
+2. Use `journalctl -xe` for logs.
+
+---
+
+### Part 3: System Security
+
+#### 1. Definition
+System security protects against unauthorized access and misuse.
+
+#### 2. File Permissions
+- **chmod**: Changes permissions.
+  ```bash
+  chmod +x filename
+  ```
+
+#### 3. User Management
+- **adduser**: Creates a user.
+  ```bash
+  sudo adduser newuser
+  ```
+
+#### 4. Firewall Basics
+- **ufw**: Firewall configuration.
+  ```bash
+  sudo ufw enable
+  ```
+
+#### 5. Self-Made Instructions
+1. Secure a directory:
+   ```bash
+   chmod 700 foldername
+   ```
+2. Set basic firewall rules:
+   ```bash
+   sudo ufw allow 22
+   ```
+
+---
+
+### Using Git for Updates
+1. Commit changes:
+   ```bash
+   git add notes.md
+   git commit -m "Added bash script examples"
+   ```
+2. Push to GitHub:
+   ```bash
+   git push origin main
+   ```
